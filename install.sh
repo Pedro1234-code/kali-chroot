@@ -8,7 +8,7 @@ sudo apt install wget -y
 
 sudo apk add wget
 
-sudo dnf install
+sudo dnf install wget
 
 mkdir /kali-fs
 
@@ -28,8 +28,15 @@ sudo chroot . /bin/bash sudo apt install gnupg  -y
 
 echo Creating launch script
 
-sudo touch /usr/bin/startkali
+sudo mkdir /kali-fs/dev
 
-echo sudo mount -t proc /proc /kali-fs/proc > /usr/bin/startkali
+sudo mkdir /kali-fs/sys
 
-echo sudo mount -o bind /sys /kali-fs/sys
+sudo mkdir /kali-fs/proc
+
+cd /usr/bin
+
+sudo wget https://raw.githubusercontent.com/Pedro1234-code/kali-chroot/main/startkali
+
+sudo chmod +x startkali
+
