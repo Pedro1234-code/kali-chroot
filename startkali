@@ -1,0 +1,18 @@
+#/bin/bash
+
+sudo mount --bind /dev /kali-fs/dev
+
+sudo mount --bind /sys /kali-fs/sys
+
+sudo mount -t proc /proc /kali-fs/proc
+
+sudo mount --bind /dev/video0 /kali-fs/dev/video0
+
+sudo mount --bind /dev/snd /kali-fs/dev/snd
+
+sudo mount --bind /dev/pts /kali-fs/dev/pts
+
+sudo mount --bind /dev/shm/kali-fs/dev/shm
+
+echo "When you exit the jail, it will still running in the backgroud. To stop the jail, type stopkali on your system shell.
+sudo chroot /kali-fs/
