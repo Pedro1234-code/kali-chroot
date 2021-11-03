@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo umount /kali-fs/dev
+
+sudo umount /kali-fs/sys
+
+sudo umount /kali-fs/proc
+
+sudo umount /kali-fs/
