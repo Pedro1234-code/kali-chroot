@@ -40,3 +40,4 @@ sudo wget https://raw.githubusercontent.com/Pedro1234-code/kali-chroot/main/star
 
 sudo chmod +x startkali
 
+sudo wget 
