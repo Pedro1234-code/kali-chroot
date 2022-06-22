@@ -6,4 +6,12 @@ sudo umount /kali-fs/sys
 
 sudo umount /kali-fs/proc
 
-sudo umount /kali-fs/
+sudo umount /kali-fs/dev/video0
+
+sudo umount /kali-fs/dev/snd
+
+sudo umount /kali-fs/dev/pts
+
+sudo umount /kali-fs/dev/shm
+
+echo "The Kali jail isn't running anymore, safe to turn off your computer or restart it"
