@@ -40,4 +40,12 @@ sudo wget https://raw.githubusercontent.com/Pedro1234-code/kali-chroot/main/star
 
 sudo chmod +x startkali
 
-sudo wget 
+sudo wget https://raw.githubusercontent.com/Pedro1234-code/kali-chroot/main/stopkali
+
+sudo chmod +x stopkali
+
+sudo wget https://raw.githubusercontent.com/Pedro1234-code/kali-chroot/main/removekali
+
+sudo chmod +x removekali
+
+zenity --notification --text "Installed a new system using chroot, please restart your computer and don't delete the root folder without stoping it at least"
